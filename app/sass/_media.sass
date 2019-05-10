@@ -1,0 +1,366 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .logo .text .title
+    font-size: 16px
+
+  .logo .text .description
+    font-size: 14px
+
+  .btn-heading, .form-search
+    width: 270px
+
+  .header-top
+    padding: 20px 0
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px)
+  .list-book
+    width: 100%
+
+    li
+      margin: 10px auto 10px
+
+
+  .dropdown-menu
+    min-width: 768px
+
+  .callback .container .title
+    font-size: 24px
+
+  .callback .container
+    padding: 30px
+
+  #subscr-form-391 input[type=text]
+    padding: 0 150px 0 40px
+    background-position: 20px center
+
+  #subscr-block-391
+    width: 350px
+
+  .position
+    margin: 0 20px 0 0
+
+  .share-box
+    flex-direction: column
+    p
+      margin: 0 0 10px
+
+  .table-head .name, .table-body .name
+    width: 55%
+
+@media only screen and (max-width : 992px)
+  .main-menu .list-item .list-item-link
+    font-size: 14px
+
+  .dropdown-menu .dropdown-menu__list
+    width: 120px
+
+  .dropdown-menu .dropdown-menu__list li a
+    font-size: 14px
+
+  .article-title-box .links-title
+    font-size: 24px
+
+
+  .icon-arrow
+    width: 40px
+    height: 40px
+    min-width: 40px
+    border-radius: 10px
+    &:before
+      width: 7px
+      height: 10px
+
+  .article-title-box .icon-arrow
+    margin: 0 0 0 20px
+
+  .info-author
+    margin: 0 20px 0 0
+
+  .position
+    max-width: none
+    width: 100%
+    order: 1
+    margin: 10px 0 0
+
+  .like-article-wrapper
+    padding: 18px 25px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 910px)
+  .share-box
+    width: 100%
+    margin: 10px 0 0
+    order: 1
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    p
+      margin: 0 10px 0 0
+
+  .table-wrapper
+    overflow-x: auto
+    table
+      min-width: 600px
+
+@media only screen and (max-width : 850px)
+  .main-menu .list-item .list-item-link
+    margin: 0 20px 0 0
+
+  .logo .icon
+    width: 40px
+    margin: 0 10px 0 0
+
+  .form-search label input
+    font-size: 14px
+
+  .btn-heading, .form-search
+    width: 250px
+
+  .dropdown-menu
+    min-width: 650px
+    justify-content: space-around
+    li
+      min-width: 100px
+
+  .callback .container:before
+    display: none
+
+@media only screen and (max-width : 810px)
+  .btn-mobile-menu
+    display: flex
+
+  .dropdown-menu
+    min-width: auto
+    flex-direction: column
+    li
+      min-width: auto
+
+  .header-bottom.active
+    left: 0
+
+  .btn-close
+    display: flex
+
+  .header-bottom
+    position: fixed
+    left: -100%
+    transition: .3s ease
+    top: 0
+    width: 250px
+    height: 100%
+    z-index: 20
+    background-color: #3f67af
+    .container
+      width: 100%
+      padding: 0
+      height: 100%
+      overflow: auto
+      align-items: flex-start
+
+  .nav-menu
+    height: auto
+    border-radius: 0
+    background: transparent
+    padding: 20px 0
+  .main-menu
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    width: 100%
+    .dropdown-menu
+      transition: inherit
+      pointer-events: auto
+      width: 100%
+      position: relative
+      left: 0
+      top: 0
+      border-radius: 0
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+      padding: 10px
+      display: none
+      opacity: 1
+      visibility: visible
+      .dropdown-menu__list
+        width: 100%
+        margin: 0
+
+  .main-menu .list-item .list-item-link
+    margin: 0
+    padding: 10px 20px
+    width: 100%
+
+  .main-menu .list-item
+    width: 100%
+
+  .header-top
+    .container
+      .btn-mobile-menu
+        order: -1
+
+  .form-search
+    width: 100%
+    margin: 10px 0 0 0
+
+
+@media only screen and (max-width : 780px)
+  .main-content, .page-article .main-content
+    padding: 0
+    width: 100%
+
+  .sidebar
+    width: 100%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 740px)
+  .callback .container
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    .box-left, .box-right
+      width: 100%
+    .box-left
+      text-align: center
+      margin: 0 auto 20px
+
+
+@media only screen and (max-width : 700px)
+  .article-news__wrapper .article-title-box
+    width: 100%
+
+  .article-preview
+    width: 100%
+    max-width: none
+
+  .footer-box
+    max-width: none
+    width: 100%
+    .logo
+      margin: 0 auto 30px
+      justify-content: center
+      align-items: center
+    .menu
+      margin: 0 0 20px
+
+  .copyright
+    max-width: none
+    position: absolute
+    left: 15px
+    bottom: 15px
+
+  footer
+    padding: 0
+    .container
+      padding: 20px 15px 130px
+
+  .copyright
+    bottom: 20px
+    margin: 0
+
+  .box-social
+    margin: 20px 0 0 0
+
+@media only screen and (max-width : 570px)
+  .btn-heading, .form-search, .box-category
+    width: 100%
+
+  .header-top
+    .logo
+      margin: 0 auto 10px
+
+
+  .form-comment label
+    width: 100%
+
+  blockquote
+    &:before
+      width: 30px
+      height: 32px
+    p
+      padding: 0 0 0 60px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px)
+  .list-book li
+    a
+      width: 290px
+      .icon-arrow
+        width: 20px
+        height: 20px
+        min-width: 20px
+        border-radius: 5px
+        &:before
+          width: 10px
+          height: 10px
+
+  .our-books, .article-news
+    margin: 40px 0
+
+  header
+    margin: 0 0 30px
+
+  #subscr-block-391
+    width: 290px
+
+  #subscr-form-391 input[type='submit']
+    width: 100px
+    font-size: 12px
+
+  #subscr-form-391 input[type=text]
+    padding: 0 100px 0 30px
+    background-position: 10px center
+    font-size: 12px
+
+  .subscribe-wrapper, .good-to-know
+    padding: 20px
+
+  .like-article-wrapper
+    flex-direction: column
+    align-items: center
+    .dislike-box
+      margin: 10px auto
+
+  blockquote
+    padding: 20px
+
+  .time
+    max-width: 80px
+
+  .main-title
+    font-size: 30px
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
